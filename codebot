@@ -1,0 +1,46 @@
+require("dotenv").config();
+const axios = require("axios");
+
+async function registerCommands() {
+    const commands = [
+        {
+            name: "red",
+            description: "Nhập key để nhận script",
+            type: 1,
+            options: [
+                {
+                    name: "key",
+                    description: "Nhập key của bạn",
+                    type: 3,
+                    required: true
+                }
+            ]
+        },
+        {
+            name: "addkey",
+            description: "Thêm key mới vào danh sách hợp lệ",
+            type: 1,
+            options: [
+                {
+                    name: "key",
+                    description: "Nhập key mới",
+                    type: 3,
+                    required: true
+                }
+            ]
+        }
+    ];
+
+    try {
+        await axios.put(
+            `https://discord.com/api/v10/applications/${process.env.APPLICATION_ID}/commands`,
+            commands,
+            { headers: { Authorization: `Bot ${process.env.BOT_TOKEN}`, "Content-Type": "application/json" } }
+        );
+        console.log("✅ Lệnh đã được đăng ký!");
+    } catch (error) {
+        console.error("❌ Lỗi khi đăng ký lệnh:", error.response ? error.response.data : error.message);
+    }
+}
+
+registerCommands();
