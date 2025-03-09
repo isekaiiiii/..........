@@ -1,10 +1,11 @@
 local scripts = {
     ["Blox Fruits"] = {
-        ["Ayai_Yume Hub TV"] = "",    
-        ["Redz Hub TV"] = "https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua",
+        ["Ayai_Yume Hub Tiếng việt"] = "https://raw.githubusercontent.com/isekaiiiii/Bloxfruits/refs/heads/main/Protected_6691530961205123.txt",    
+        ["Redz Hub Tiếng việt "] = "https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua",
         ["Tsuo Hub"] = "https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts",
         ["Speed Hub X"] = "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua",
-        ["Min Hub kiếm huyền thoại"] = "https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss",
+        ["Min Hub hop boss"] = "https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss",
+        ["Min Hub kiếm huyền thoại"] = "https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopSword",
         ["Teddy Hub hop sv"] = "https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium",
         ["Vxeze Hub hop sv"] = "https://raw.githubusercontent.com/Dex-Bear/VxezeHubHopBoss/refs/heads/main/SkidConCacBaM",
         ["Alchemy Hub nhặt fruits + hop sv"] = "https://scripts.alchemyhub.xyz",
@@ -14,15 +15,12 @@ local scripts = {
         ["Xero Hub"] = "https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua",
         ["Quantum Onyx Hub"] = "https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua",
         ["Lion Hub nhặt trái + gạt cần "] = "https://raw.githubusercontent.com/NHMdz/BloxFruit/main/Lion%20Hub%20Find%20Fruit.lua",
-        ["Zis Hub Tv"] = "https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb3",
+        ["Zis Hub Tiếng việt"] = "https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb3",
         ["Alchemy Hub"] = "https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua",
         ["Andepzai Hub"] = "https://raw.githubusercontent.com/AndepzaiHubBeta/ref/main/AndepzaiNewUpdated.lua",
         ["W Azure"] = "https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua",
         ["Zen Hub"] = "https://raw.githubusercontent.com/ZenScript/zenhub/main/script.lua",
-        ["Mukuro Hub"] = "https://raw.githubusercontent.com/mukurohub/mukuro/main/script.lua",
-        ["Thunder Z Hub"] = "https://raw.githubusercontent.com/thunderzhub/main/script.lua",
-        ["Shadow Hub"] = "https://raw.githubusercontent.com/shadowhub/shadow/main/script.lua",
-        ["Viper Hub"] = "https://raw.githubusercontent.com/viperhub/viper/main/script.lua"
+        ["Maru Hub"] = "https://raw.githubusercontent.com/isekaiiiii/Ayai_Yume/refs/heads/main/Banana"
     }
 }
 
