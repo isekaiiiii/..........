@@ -8,7 +8,6 @@ local scripts = {
         ["Speed Hub X"] = "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua",
         ["Min Hub hop boss"] = "https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss",
         ["Min Hub kiếm huyền thoại"] = "https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopSword",
-        ["Teddy Hub hop sv"] = "https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium",
         ["Vxeze Hub hop sv"] = "https://raw.githubusercontent.com/Dex-Bear/VxezeHubHopBoss/refs/heads/main/SkidConCacBaM",
         ["Alchemy Hub nhặt fruits + hop sv"] = "https://scripts.alchemyhub.xyz",
         ["Hiru Hub"] = "https://raw.githubusercontent.com/NGUYENVUDUY1/Dev-Hiru/refs/heads/main/HiruHub.lua",
@@ -22,19 +21,46 @@ local scripts = {
         ["Andepzai Hub"] = "https://raw.githubusercontent.com/AndepzaiHubBeta/ref/main/AndepzaiNewUpdated.lua",
         ["W Azure"] = "https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua",
         ["Zen Hub"] = "https://raw.githubusercontent.com/ZenScript/zenhub/main/script.lua",
-        ["Maru Hub"] = "https://raw.githubusercontent.com/isekaiiiii/Ayai_Yume/refs/heads/main/Banana",
     },
     ["key1"] = { 
         ["Hoho hub"] = "https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI",
         ["Strix Hub"] = "https://scriptroblox.onrender.com/strix"
     },
     ["kaitun"] = {
-        ["Royx hub "] = "https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua",
-        ["Simple hub "] = "https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"
-     },
+        ["Royx hub"] = "https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua",
+        ["Simple hub"] = "https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"
+    },
     ["bouty"] = {
-        ["Hoho hub aotu bouty cần key key"] = "https://pastefy.app/Pki4kBF8"
+        ["Hoho hub auto bouty cần get key"] = "https://pastefy.app/Pki4kBF8"
+    },
+    ["Premium"] = {
+        ["Maru Hub"] = "https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/MaruHub",
+        ["Banana Hub"] = "https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/MaruHub"        
     }
 }
 
-return scripts
+-- Thêm nút script vào các tab tương ứng
+for tabName, scriptList in pairs(scripts) do
+    if type(scriptList) == "table" and Tabs[tabName] then
+        for name, url in pairs(scriptList) do
+            if type(name) == "string" and type(url) == "string" then
+                Tabs[tabName]:AddButton({
+                    Title = name,
+                    Description = "Nhấn vào để chạy",
+                    Callback = function()
+                        loadstring(game:HttpGet(url))()
+                    end
+                })
+            end
+        end
+    end
+end
+
+-- Thêm nút Discord
+Tabs.ALL:AddButton({
+    Title = "Discord",
+    Description = "Giao lưu",
+    Callback = function()
+        setclipboard("https://discord.gg/bkg9brba3P");
+    end
+})
