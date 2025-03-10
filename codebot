@@ -1,4 +1,4 @@
-return {
+local scripts = {
     ["fram"] = {
         ["Master Hub full tiếng việt"] = "https://raw.githubusercontent.com/obfmoonsec/Masterhub/refs/heads/main/obf",  
         ["Blue X"] = "https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua",    
@@ -7,7 +7,7 @@ return {
         ["Tsuo Hub"] = "https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts",
         ["Speed Hub X"] = "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua",
         ["Min Hub hop boss"] = "https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss",
-        ["Min Hub hop sv có kiếm huyền thoại"] = "https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopSword",
+        ["Min Hub kiếm huyền thoại"] = "https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopSword",
         ["Teddy Hub hop sv"] = "https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium",
         ["Vxeze Hub hop sv"] = "https://raw.githubusercontent.com/Dex-Bear/VxezeHubHopBoss/refs/heads/main/SkidConCacBaM",
         ["Alchemy Hub nhặt fruits + hop sv"] = "https://scripts.alchemyhub.xyz",
@@ -36,3 +36,5 @@ return {
         ["Hoho hub aotu bouty cần key key"] = "https://pastefy.app/Pki4kBF8"
     }
 }
+
+return scripts
